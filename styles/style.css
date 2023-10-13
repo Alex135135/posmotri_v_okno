@@ -133,8 +133,9 @@ ol {
   position: relative;
   inline-size: 711px;
   margin-bottom: 16px;
-  block-size: 456px;
+  block-size: 386px;
 }
+
 .result__video {
   width: 100%;
 }
