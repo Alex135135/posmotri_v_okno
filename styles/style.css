@@ -237,7 +237,7 @@ ol {
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
-  border: 1px solid #FFF currentColor;
+  border: 1px solid currentColor;
   background: transparent;
   inline-size: 194px;
 }
