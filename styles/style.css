@@ -223,6 +223,7 @@ ol {
 /*========================*/
 .button {
   color: #FFF;
+  font-family: 'Fira Sans Condensed', sans-serif;
   display: block;
   padding: 6px 0;
   text-align: center;
