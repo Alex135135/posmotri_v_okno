@@ -40,7 +40,7 @@ ol {
   block-size: 100%;
   margin: auto;  
   color: #fff;
-  font-family: 'Fira Sans Condensed', "Arial", sans-serif;
+  font-family: 'Fira Sans Condensed', 'Arial', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -48,7 +48,7 @@ ol {
 /*========================*/
 .title {
   color: #fff;
-  font-family: 'Fira Sans Condensed', "Arial", sans-serif;
+  font-family: 'Oswald', 'Arial', sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%; 
@@ -69,18 +69,16 @@ ol {
   inline-size: 100%;
   max-width: 1140px;
 }
+
 .content__details {
   width: 100%;
 }
 .content__list {
   max-height: 298px;
   position: relative;
-  overflow-y: scroll;
-  scrollbar-width: none;
+  overflow-y: auto;
 }
-.content__list::-webkit-scrollbar {
-  display: none;
-}
+
 .content__list-item:not(:last-child) {
   margin-bottom: 34px;
 }
@@ -106,20 +104,28 @@ ol {
 }
 .content__video-card-title {
   color: #FFF;
-  font-family: 'Fira Sans Condensed', "Arial", sans-serif;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  padding: 2px; 
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .content__video-card-description {
   color: #FFF;
   font-size: 18px;
-  line-height: 16.2px; 
+  line-height: 16.2px;
+  margin: 0 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .content__video-card-thumbnail {
-  inline-size: 194px;
+  max-width: 194px;
   block-size: 103px;
   object-fit: cover;
   object-position: center;
@@ -131,14 +137,14 @@ ol {
 }
 .result__video-container {
   position: relative;
+  block-size: 386px;
   inline-size: 711px;
   margin-bottom: 16px;
-  block-size: 386px;
 }
-
 .result__video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 /*========================*/
 .search-form {
@@ -158,6 +164,7 @@ ol {
 .search-form__fieldset-title {
   color: #FFF;
   font-size: 18px;
+  line-height: normal;
 }
 .search-form__label {
   cursor: pointer;
@@ -223,17 +230,16 @@ ol {
 /*========================*/
 .button {
   color: #FFF;
-  font-family: 'Fira Sans Condensed', "Arial", sans-serif;
+  font-family: 'Fira Sans Condensed', 'Arial', sans-serif;
   display: block;
   padding: 6px 0;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
-  border: 1px solid #FFF;
+  border: 1px solid #FFF currentColor;
   background: transparent;
   inline-size: 194px;
-  block-size: 100%;
 }
 .more-button {
   width: 100%;
@@ -251,7 +257,7 @@ ol {
 }
 /*HOVER========================*/
 .button:hover,
-.search-form__label-text:hover,
+.search-form__label:hover .search-form__label-text,
 .content__card-link:hover {
   text-decoration: underline 1px #FFF;
 }
