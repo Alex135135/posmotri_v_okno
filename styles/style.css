@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -114,7 +115,9 @@ ol {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  max-width: 200px;
 }
+
 .content__video-card-description {
   color: #FFF;
   font-size: 18px;
@@ -123,7 +126,9 @@ ol {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  max-width: 200px;
 }
+
 .content__video-card-thumbnail {
   max-width: 194px;
   block-size: 103px;
@@ -165,6 +170,7 @@ ol {
   color: #FFF;
   font-size: 18px;
   line-height: normal;
+  font-weight: 400;
 }
 .search-form__label {
   cursor: pointer;
@@ -248,6 +254,12 @@ ol {
   align-self: flex-end;
 }
 /*FOCUS========================*/
+.button: focus,
+.content__card-link: focus,
+.search-form__textfield: focus {
+  outline: none;
+}
+
 .button:focus-visible,
 .search-form__label:has(:focus-visible),
 .content__card-link:focus-visible,
