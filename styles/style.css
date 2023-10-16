@@ -253,9 +253,9 @@ ol {
   align-self: flex-end;
 }
 /*FOCUS========================*/
-.button: focus,
-.content__card-link: focus,
-.search-form__textfield: focus {
+.button:focus,
+.content__card-link:focus,
+.search-form__textfield:focus {
   outline: none;
 }
 
